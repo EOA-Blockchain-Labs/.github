@@ -1,26 +1,78 @@
-# What is this org about?
+# Ethereum on ARM
 
-**[Ethereum on ARM](https://github.com/ethereum-on-arm)** builds and maintains Linux images and tools that turn cheap ARM64 boards into full Ethereum nodes and staking boxes with almost no manual setup.
+Ethereum on ARM is an open-source project that builds and maintains ready-to-use Linux images, packages, and tools that turn affordable ARM64 single-board computers into fully featured Ethereum nodes and staking machines with minimal manual setup.
 
-The project focuses on L1 and L2 infrastructure, so you can run execution, consensus, and even **[OP‑Stack](https://stack.optimism.io/)** based networks on a tiny, low‑power machine at home.
+The project’s mission is to lower the barrier to running Ethereum infrastructure by making nodes more accessible, energy-efficient, and sustainable for individuals, educators, and small operators.
+
+Ethereum on ARM supports both Layer 1 and Layer 2 infrastructure, allowing you to run execution clients, consensus clients, validators, and OP-Stack–based networks on low-power hardware at home or in small labs.
+
+---
+
+## What you can run
+
+### Ethereum Layer 1
+- Execution clients: Geth, Nethermind, Erigon, Besu, Reth
+- Consensus clients: Lighthouse, Prysm, Teku, Nimbus, Lodestar, Grandine
+- Full nodes, archive nodes, and validator setups
+
+### Layer 2 / Rollups
+- OP-Stack components (op-node, op-geth, proposer, challenger)
+- Other EVM-compatible networks where ARM support is practical
+
+All components are optimized for ARM64 boards such as Raspberry Pi, Rock 5, Orange Pi, and similar devices.
 
 ---
 
 ## How to get involved
 
-* **Jump into the repo:** Open **[Issues](https://github.com/ethereum-on-arm/ethereum-on-arm/issues)** if you spot bugs, missing boards, or have ideas for new features.
-* **Contribute:** Send **[Pull Requests](https://github.com/ethereum-on-arm/ethereum-on-arm/pulls)** for images, scripts, monitoring, and docs – hardware notes and benchmarks are super helpful too.
-* **Join the Community:** Hang out in the channels to share setups, ask questions, and help other node runners:
-    * [Discord](https://discord.gg/ethereum) (Look for the #arm channel)
-    * [Farcaster](https://warpcast.com/ethereumonarm)
-    * [X (Twitter)](https://twitter.com/EthereumOnARM)
+### Contribute
+- Open an issue: https://github.com/ethereum-on-arm/ethereum-on-arm/issues  
+  Report bugs, request support for new boards, or suggest features.
+- Submit pull requests: https://github.com/ethereum-on-arm/ethereum-on-arm/pulls  
+  Contributions are welcome for images, scripts, monitoring, automation, and documentation.
+  Hardware notes, benchmarks, and real-world testing reports are especially valuable.
 
-## Good starting points
+### Join the community
+- Discord: https://discord.gg/ethereum (look for the #arm channel)
+- Farcaster: https://warpcast.com/ethereumonarm
+- X (Twitter): https://twitter.com/EthereumOnARM
 
-* **Docs:** The **[Read the Docs site](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)** has quick start, user guide, and advanced sections if you want to go from *flash* → *synced* in one sitting.
-* **Releases:** Grab ready‑to‑use images for supported boards from the **[GitHub Releases page](https://github.com/ethereum-on-arm/ethereum-on-arm/releases)**.
-* **Background reading:** If you are new to nodes, the official **[Ethereum “run a node” guide](https://ethereum.org/en/run-a-node/)** gives a nice overview of what you are actually running.
+---
 
-## A couple of fun bits
-* **Efficiency:** Yes, you can run an archive node plus a validator on a sub‑$200 ARM board sipping around **10 W**, which is pretty wild for a “home lab” box.
-* **Longevity:** Some early users started with Raspberry Pi images and never stopped; now they have little ARM clusters tucked behind their routers quietly keeping Ethereum online.
+## Getting started
+
+- Documentation:  
+  https://ethereum-on-arm-documentation.readthedocs.io/en/latest/  
+  Includes quick start guides, user documentation, and advanced topics to get you from flash to fully synced.
+
+- Releases:  
+  https://github.com/ethereum-on-arm/ethereum-on-arm/releases  
+  Download prebuilt images for supported ARM boards.
+
+- Background reading:  
+  https://ethereum.org/en/run-a-node/  
+  Official Ethereum guide explaining what it means to run a node.
+
+---
+
+## Why ARM?
+
+- Low power consumption (often around 10 W)
+- Affordable hardware
+- Silent, always-on operation
+- Ideal for home labs, education, and decentralization at the edge
+
+---
+
+## Fun facts
+
+- You can run a full node — and even an archive node plus a validator — on a sub-$200 ARM board.
+- Some users have been running Ethereum on ARM continuously for years, upgrading hardware while keeping the same node alive.
+- Small ARM clusters behind home routers help keep Ethereum decentralized and resilient.
+
+---
+
+## License
+
+Ethereum on ARM is released under open-source licenses.  
+See individual repositories for license details.
